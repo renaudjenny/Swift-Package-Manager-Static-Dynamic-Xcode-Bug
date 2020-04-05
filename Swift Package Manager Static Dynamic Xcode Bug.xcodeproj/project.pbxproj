@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C460BF92439CD5F006D02EA /* SwiftClockUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4C460BF82439CD5F006D02EA /* SwiftClockUI */; };
+		4C460BFD2439E3F4006D02EA /* SwiftClockUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4C460BFC2439E3F4006D02EA /* SwiftClockUI */; };
 		4CAF47092439C0E400E9FFB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF47082439C0E400E9FFB6 /* AppDelegate.swift */; };
 		4CAF470B2439C0E400E9FFB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF470A2439C0E400E9FFB6 /* SceneDelegate.swift */; };
 		4CAF470D2439C0E400E9FFB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF470C2439C0E400E9FFB6 /* ContentView.swift */; };
@@ -92,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAF47312439C21000E9FFB6 /* NotificationCenter.framework in Frameworks */,
+				4C460BFD2439E3F4006D02EA /* SwiftClockUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +227,7 @@
 			);
 			name = Widget;
 			packageProductDependencies = (
+				4C460BFC2439E3F4006D02EA /* SwiftClockUI */,
 			);
 			productName = Widget;
 			productReference = 4CAF472E2439C21000E9FFB6 /* Widget.appex */;
@@ -657,6 +660,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		4C460BF82439CD5F006D02EA /* SwiftClockUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C460BF72439CD5F006D02EA /* XCRemoteSwiftPackageReference "SwiftClockUI" */;
+			productName = SwiftClockUI;
+		};
+		4C460BFC2439E3F4006D02EA /* SwiftClockUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4C460BF72439CD5F006D02EA /* XCRemoteSwiftPackageReference "SwiftClockUI" */;
 			productName = SwiftClockUI;

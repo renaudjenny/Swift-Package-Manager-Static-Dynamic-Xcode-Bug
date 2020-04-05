@@ -1,12 +1,13 @@
 import UIKit
 import NotificationCenter
 import SwiftUI
+import SwiftClockUI
 
 // https://medium.com/@code_cookies/swiftui-embed-swiftui-view-into-the-storyboard-a6fc96e7a0a1
 
 struct WidgetView: View {
     var body: some View {
-        Text("TODO: add a Clock here")
+        ClockView().padding()
     }
 }
 
