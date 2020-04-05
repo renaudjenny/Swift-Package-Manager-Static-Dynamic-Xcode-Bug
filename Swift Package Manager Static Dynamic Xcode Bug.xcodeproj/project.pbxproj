@@ -14,6 +14,10 @@
 		4CAF47122439C0E500E9FFB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAF47112439C0E500E9FFB6 /* Preview Assets.xcassets */; };
 		4CAF47152439C0E500E9FFB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAF47132439C0E500E9FFB6 /* LaunchScreen.storyboard */; };
 		4CAF47202439C0E500E9FFB6 /* Swift_Package_Manager_Static_Dynamic_Xcode_BugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF471F2439C0E500E9FFB6 /* Swift_Package_Manager_Static_Dynamic_Xcode_BugTests.swift */; };
+		4CAF47312439C21000E9FFB6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAF47302439C21000E9FFB6 /* NotificationCenter.framework */; };
+		4CAF47342439C21000E9FFB6 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF47332439C21000E9FFB6 /* TodayViewController.swift */; };
+		4CAF47372439C21000E9FFB6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAF47352439C21000E9FFB6 /* MainInterface.storyboard */; };
+		4CAF473B2439C21000E9FFB6 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4CAF472E2439C21000E9FFB6 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +28,28 @@
 			remoteGlobalIDString = 4CAF47042439C0E400E9FFB6;
 			remoteInfo = "Swift Package Manager Static Dynamic Xcode Bug";
 		};
+		4CAF47392439C21000E9FFB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CAF46FD2439C0E400E9FFB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CAF472D2439C21000E9FFB6;
+			remoteInfo = Widget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CAF473F2439C21000E9FFB6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4CAF473B2439C21000E9FFB6 /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4CAF47052439C0E400E9FFB6 /* Swift Package Manager Static Dynamic Xcode Bug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Package Manager Static Dynamic Xcode Bug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +63,11 @@
 		4CAF471B2439C0E500E9FFB6 /* Swift Package Manager Static Dynamic Xcode BugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Package Manager Static Dynamic Xcode BugTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAF471F2439C0E500E9FFB6 /* Swift_Package_Manager_Static_Dynamic_Xcode_BugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Package_Manager_Static_Dynamic_Xcode_BugTests.swift; sourceTree = "<group>"; };
 		4CAF47212439C0E600E9FFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CAF472E2439C21000E9FFB6 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CAF47302439C21000E9FFB6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4CAF47332439C21000E9FFB6 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4CAF47362439C21000E9FFB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4CAF47382439C21000E9FFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CAF472B2439C21000E9FFB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAF47312439C21000E9FFB6 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +101,8 @@
 			children = (
 				4CAF47072439C0E400E9FFB6 /* Swift Package Manager Static Dynamic Xcode Bug */,
 				4CAF471E2439C0E500E9FFB6 /* Swift Package Manager Static Dynamic Xcode BugTests */,
+				4CAF47322439C21000E9FFB6 /* Widget */,
+				4CAF472F2439C21000E9FFB6 /* Frameworks */,
 				4CAF47062439C0E400E9FFB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +112,7 @@
 			children = (
 				4CAF47052439C0E400E9FFB6 /* Swift Package Manager Static Dynamic Xcode Bug.app */,
 				4CAF471B2439C0E500E9FFB6 /* Swift Package Manager Static Dynamic Xcode BugTests.xctest */,
+				4CAF472E2439C21000E9FFB6 /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +148,24 @@
 			path = "Swift Package Manager Static Dynamic Xcode BugTests";
 			sourceTree = "<group>";
 		};
+		4CAF472F2439C21000E9FFB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CAF47302439C21000E9FFB6 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CAF47322439C21000E9FFB6 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4CAF47332439C21000E9FFB6 /* TodayViewController.swift */,
+				4CAF47352439C21000E9FFB6 /* MainInterface.storyboard */,
+				4CAF47382439C21000E9FFB6 /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,10 +176,12 @@
 				4CAF47012439C0E400E9FFB6 /* Sources */,
 				4CAF47022439C0E400E9FFB6 /* Frameworks */,
 				4CAF47032439C0E400E9FFB6 /* Resources */,
+				4CAF473F2439C21000E9FFB6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4CAF473A2439C21000E9FFB6 /* PBXTargetDependency */,
 			);
 			name = "Swift Package Manager Static Dynamic Xcode Bug";
 			productName = "Swift Package Manager Static Dynamic Xcode Bug";
@@ -145,6 +206,23 @@
 			productReference = 4CAF471B2439C0E500E9FFB6 /* Swift Package Manager Static Dynamic Xcode BugTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4CAF472D2439C21000E9FFB6 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CAF473C2439C21000E9FFB6 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				4CAF472A2439C21000E9FFB6 /* Sources */,
+				4CAF472B2439C21000E9FFB6 /* Frameworks */,
+				4CAF472C2439C21000E9FFB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = 4CAF472E2439C21000E9FFB6 /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +239,9 @@
 					4CAF471A2439C0E500E9FFB6 = {
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 4CAF47042439C0E400E9FFB6;
+					};
+					4CAF472D2439C21000E9FFB6 = {
+						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
@@ -179,6 +260,7 @@
 			targets = (
 				4CAF47042439C0E400E9FFB6 /* Swift Package Manager Static Dynamic Xcode Bug */,
 				4CAF471A2439C0E500E9FFB6 /* Swift Package Manager Static Dynamic Xcode BugTests */,
+				4CAF472D2439C21000E9FFB6 /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +280,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAF472C2439C21000E9FFB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAF47372439C21000E9FFB6 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +312,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CAF472A2439C21000E9FFB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAF47342439C21000E9FFB6 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -229,6 +327,11 @@
 			isa = PBXTargetDependency;
 			target = 4CAF47042439C0E400E9FFB6 /* Swift Package Manager Static Dynamic Xcode Bug */;
 			targetProxy = 4CAF471C2439C0E500E9FFB6 /* PBXContainerItemProxy */;
+		};
+		4CAF473A2439C21000E9FFB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CAF472D2439C21000E9FFB6 /* Widget */;
+			targetProxy = 4CAF47392439C21000E9FFB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -239,6 +342,14 @@
 				4CAF47142439C0E500E9FFB6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4CAF47352439C21000E9FFB6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CAF47362439C21000E9FFB6 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -361,6 +472,7 @@
 		4CAF47252439C0E600E9FFB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Swift Package Manager Static Dynamic Xcode Bug/Preview Content\"";
@@ -381,6 +493,7 @@
 		4CAF47262439C0E600E9FFB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Swift Package Manager Static Dynamic Xcode Bug/Preview Content\"";
@@ -442,6 +555,44 @@
 			};
 			name = Release;
 		};
+		4CAF473D2439C21000E9FFB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBQ98GC8JT;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "renaud.jenny.Swift-Package-Manager-Static-Dynamic-Xcode-Bug.Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CAF473E2439C21000E9FFB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBQ98GC8JT;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "renaud.jenny.Swift-Package-Manager-Static-Dynamic-Xcode-Bug.Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -468,6 +619,15 @@
 			buildConfigurations = (
 				4CAF47282439C0E600E9FFB6 /* Debug */,
 				4CAF47292439C0E600E9FFB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CAF473C2439C21000E9FFB6 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAF473D2439C21000E9FFB6 /* Debug */,
+				4CAF473E2439C21000E9FFB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
