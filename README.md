@@ -62,12 +62,12 @@ Here is the steps to follow to get the workaround
 
 #### Step 1: Add your common dependency as a SPM package in your main project (even if it's indirectly already there)
 
-![Add Common external library with SPM into the main project](docs/assests/add-common-external-library-with-spm-into-the-main-project.png)
+![Add Common external library with SPM into the main project](docs/assets/add-common-external-library-with-spm-into-the-main-project.png)
 
 * ❗️ For library like this one, you shouldn't link it with your project, so uncheck this while SPM/Xcode ask you which target you want
 * ⚠️ don't forget to update to last package version!
 
-![Don't forget to update to last package version](docs/assests/update-to-last-package-version.png)
+![Don't forget to update to last package version](docs/assets/update-to-last-package-version.png)
 
 #### Step 2: Link common libraries with your Unit Tests target manually
 
@@ -79,7 +79,7 @@ Here is the steps to follow to get the workaround
 
 * Add SPMLibraries framework as well
 
-![Unit Tests target linked with libraries](docs/assets/unit-tests-linked)
+![Unit Tests target linked with libraries](docs/assets/unit-tests-linked.png)
 
 * And here we are 🎉🎉🎉
 
