@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C460BF92439CD5F006D02EA /* SwiftClockUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4C460BF82439CD5F006D02EA /* SwiftClockUI */; };
 		4CAF47092439C0E400E9FFB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF47082439C0E400E9FFB6 /* AppDelegate.swift */; };
 		4CAF470B2439C0E400E9FFB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF470A2439C0E400E9FFB6 /* SceneDelegate.swift */; };
 		4CAF470D2439C0E400E9FFB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF470C2439C0E400E9FFB6 /* ContentView.swift */; };
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C460BF92439CD5F006D02EA /* SwiftClockUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,9 @@
 				4CAF473A2439C21000E9FFB6 /* PBXTargetDependency */,
 			);
 			name = "Swift Package Manager Static Dynamic Xcode Bug";
+			packageProductDependencies = (
+				4C460BF82439CD5F006D02EA /* SwiftClockUI */,
+			);
 			productName = "Swift Package Manager Static Dynamic Xcode Bug";
 			productReference = 4CAF47052439C0E400E9FFB6 /* Swift Package Manager Static Dynamic Xcode Bug.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +224,8 @@
 			dependencies = (
 			);
 			name = Widget;
+			packageProductDependencies = (
+			);
 			productName = Widget;
 			productReference = 4CAF472E2439C21000E9FFB6 /* Widget.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -254,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 4CAF46FC2439C0E400E9FFB6;
+			packageReferences = (
+				4C460BF72439CD5F006D02EA /* XCRemoteSwiftPackageReference "SwiftClockUI" */,
+			);
 			productRefGroup = 4CAF47062439C0E400E9FFB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -633,6 +643,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C460BF72439CD5F006D02EA /* XCRemoteSwiftPackageReference "SwiftClockUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/renaudjenny/SwiftClockUI";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.10;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C460BF82439CD5F006D02EA /* SwiftClockUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C460BF72439CD5F006D02EA /* XCRemoteSwiftPackageReference "SwiftClockUI" */;
+			productName = SwiftClockUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4CAF46FD2439C0E400E9FFB6 /* Project object */;
 }

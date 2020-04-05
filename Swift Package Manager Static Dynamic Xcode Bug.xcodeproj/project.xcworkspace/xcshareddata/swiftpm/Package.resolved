@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SnapshotTesting",
+        "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
+        "state": {
+          "branch": null,
+          "revision": "114882386a815f4a2e6d8f2f7ee4857acd372438",
+          "version": "1.7.2"
+        }
+      },
+      {
+        "package": "SwiftClockUI",
+        "repositoryURL": "https://github.com/renaudjenny/SwiftClockUI",
+        "state": {
+          "branch": null,
+          "revision": "019c20bc3f311b3e061a84e1bd1633415fc1b2d2",
+          "version": "0.0.10"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

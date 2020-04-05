@@ -8,5 +8,7 @@ Create **SPMLibraries** is a possible workaround to continue using SPM with Xcod
 
 ## Step by Step
 
-* commit 1: *hash*: project without libraries (✅ compile)
+* commit 1: *08e32fb3d4083b4bbaf49d25b72175a9a4a575a8*: project without libraries (✅ compile)
   * this commit contains placeholder for the main screen and the widget
+* commit 2: *hash* add just the first external library (SwiftClockUI) with SPM for the main project (✅ compile)
+  * I don't try to use the external library for the Widget

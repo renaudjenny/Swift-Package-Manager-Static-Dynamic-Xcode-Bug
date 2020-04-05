@@ -1,10 +1,11 @@
 import SwiftUI
+import SwiftClockUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
             Text("Hello, Clock!")
-            Text("TODO: add a clock here")
+            ClockView().padding()
         }
     }
 }
